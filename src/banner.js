@@ -1,4 +1,5 @@
 import Icon from "./assets/img/logo.png";
+import { createButton } from "./helpers";
 
 export default function banner(){
   const header = document.createElement("header");
@@ -22,13 +23,4 @@ export default function banner(){
   header.appendChild(buttonsDiv);
   
   return header;
-}
-
-function createButton(name){
-  const button = document.createElement("button");
-  button.setAttribute("id", name); //we need the id for switching the pages
-
-  button.innerText = name.toUpperCase().split("-")[0];
-
-  return button;
 }

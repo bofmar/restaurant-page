@@ -3,6 +3,7 @@ import Kids from "./assets/img/kids-menu.png";
 import Parties from "./assets/img/parties.png";
 import Award1 from "./assets/img/award1.png";
 import Award2 from "./assets/img/award2.png";
+import { createAndAppendText, createAndAppendImage } from "./helpers";
 
 export default function homePage(){
   const content = document.createElement("div");
@@ -30,16 +31,4 @@ export default function homePage(){
   content.appendChild(mainDiv);
 
   return content;
-}
-
-function createAndAppendText(type,target,message){
-  const text = document.createElement(type);
-  text.innerText = message;
-  target.appendChild(text);
-}
-
-function createAndAppendImage(path,target){
-  const image = new Image();
-  image.src = path;
-  target.appendChild(image);
 }
