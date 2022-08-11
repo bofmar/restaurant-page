@@ -14,3 +14,75 @@ header{
   display: flex;
   gap: 5px;
 }
+
+/* * * * * *
+  Homepage
+* * * * * */
+
+.homepage{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homepage > img{
+  width: 100vw;
+  height: 60vh;
+}
+
+.homepage > div{
+  height: 50vh;
+  width: 50vw;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+    "kids text award1"
+    "parties text award2";
+  justify-items: center;
+  padding-top: 10px;
+}
+
+.kids{
+  grid-area: kids;
+}
+
+.parties{
+  grid-area: parties;
+}
+
+.award1{
+  grid-area: award1;
+}
+
+.award2{
+  grid-area: award2;
+}
+
+.homepage > div > div{
+  grid-area: text;
+  display: flex;
+  line-height: 1.5rem;
+  gap: 10px;
+  flex-direction: column;
+  width: 60ch;
+}
+
+.homepage h1{
+  font-size: 1.5rem;
+  font-weight: bolder;
+  border-bottom: #333 solid 1px;
+  padding-bottom: 10px;
+}
+
+.homepage h2{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.homepage h1,
+.homepage h2{
+  color: #555;
+}
+

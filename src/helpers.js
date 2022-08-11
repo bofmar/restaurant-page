@@ -4,9 +4,10 @@ export function createAndAppendText(type,target,message){
   target.appendChild(text);
 }
 
-export function createAndAppendImage(path,target){
+export function createAndAppendImage(path,target,name){
   const image = new Image();
   image.src = path;
+  image.classList.add(name);
   target.appendChild(image);
 }
 
