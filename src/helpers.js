@@ -24,5 +24,5 @@ export function createDivWithClass(name){
   const newDiv = document.createElement("div");
   newDiv.classList.add(name);
 
-  return name;
+  return newDiv;
 }
