@@ -114,11 +114,11 @@ header{
   column-gap: 5vw;
 }
 
-.menu :nth-child(2n - 1){
+.menu > :nth-child(2n - 1){
   justify-self: end;
 }
 
-.menu :nth-child(2n){
+.menu > :nth-child(2n){
   justify-self: start;
 }
 
