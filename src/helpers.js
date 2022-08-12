@@ -26,3 +26,21 @@ export function createDivWithClass(name){
 
   return newDiv;
 }
+
+export function createAndAppendMenuText(title,price,blurb,target,className){
+  const newMenuItem = document.createElement("div");
+  const newTitle = document.createElement("h1");
+  const newPrice = document.createElement("h2");
+  const newBlurb = document.createElement("p");
+
+  newTitle.innerText = title;
+  newPrice.innerText = price;
+  newBlurb.innerText = blurb;
+
+  newMenuItem.appendChild(newTitle);
+  newMenuItem.appendChild(newPrice);
+  newMenuItem.appendChild(newBlurb);
+
+  newMenuItem.classList.add(className);
+  target.appendChild(newMenuItem);
+}
