@@ -19,3 +19,10 @@ export function createButton(name){
 
   return button;
 }
+
+export function createDivWithClass(name){
+  const newDiv = document.createElement("div");
+  newDiv.classList.add(name);
+
+  return name;
+}
