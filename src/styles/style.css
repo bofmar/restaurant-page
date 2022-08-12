@@ -1,4 +1,16 @@
 /* * * * *
+  Global
+* * * * */
+@font-face {
+
+  font-family: "Japanese";
+  src: url("../assets/fonts/uchiyama.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+
+}
+
+/* * * * *
   Banner
 * * * * */
 header{
@@ -86,3 +98,77 @@ header{
   color: #555;
 }
 
+/* * * *
+  Menu
+* * * */
+
+.menu{
+  background: url("../assets/img/tapestry.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  column-gap: 5vw;
+}
+
+.menu :nth-child(2n - 1){
+  justify-self: end;
+}
+
+.menu :nth-child(2n){
+  justify-self: start;
+}
+
+.menu-item{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.menu-item img{
+  height: 180px;
+  width: 200px;
+}
+
+.menu-text{
+  display: grid;
+  grid-template-columns: 200px 80px;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.menu-text h1,
+.menu-text h2{
+  font-size: 1.5rem;
+  font-family: "Japanese";
+}
+
+.menu-text h1{
+  position: relative;
+  width: 100%;
+}
+
+.menu-item h2{
+  color: rgb(255, 103, 103);
+  justify-self: center;
+}
+
+.menu-text > h1::after{
+  content: "";
+  background-color: rgb(255, 103, 103);
+  position: absolute;
+  left:0;
+  bottom: -7px;
+  width: 15vw;
+  height: 1px;
+}
+
+.menu-text p{
+  font-size: 1.2rem;
+  grid-column: 1/3;
+}

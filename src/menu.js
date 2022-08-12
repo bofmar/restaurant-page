@@ -11,6 +11,7 @@ import { createAndAppendImage, createAndAppendMenuText, createDivWithClass } fro
 
 export default function menuPage(){
   const content = document.createElement("div");
+  content.classList.add("menu");
   const images = [curryRice,makizushi,oden,ramen,sashimi,sukiyaki,takoyaki,tempura];
   
   // iterate through all menu images, create them in html and append them to a div.
