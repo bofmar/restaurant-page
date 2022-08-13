@@ -8,5 +8,5 @@ import "./styles/style.css";
 (function initial(){
   const content = document.getElementById("content");
   content.appendChild(banner());
-  content.appendChild(contactPage());
+  content.appendChild(homepage());
 })();
