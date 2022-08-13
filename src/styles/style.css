@@ -24,7 +24,20 @@ header{
 
 .buttons-container{
   display: flex;
-  gap: 5px;
+  column-gap: 35px;
+  }
+
+button {
+  all: unset;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: rgb(231, 236, 241);
+  transition: all 250ms ease-in;
+}
+
+button:hover{
+  color: rgb(2, 175, 2);
+  transition: all 250ms ease-in;
 }
 
 /* * * * * *
